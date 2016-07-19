@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Model/Languages.h"
+@interface ViewController :UIViewController<UITableViewDelegate,UITableViewDataSource>
+//@property (weak,nonatomic) IBOutlet UITableView *myTableView;
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
-@interface ViewController : UIViewController
-
-
+-(void) appendelementx :(Languages *) langx;
 @end
 
